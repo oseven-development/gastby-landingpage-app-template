@@ -92,7 +92,7 @@ export default createGlobalStyle`
     grid-column-gap: 30px;
     grid-template-areas:
       "h h h h h h h h h h h h"
-      "p p p p p i i i i i i i"
+      "p p p p p p p i i i i i"
       "c c c c c c c c c c c c"
       "f f f f f f f f f f f f";
   }
@@ -111,8 +111,8 @@ export default createGlobalStyle`
       grid-template-rows: 115px auto auto auto auto;
       grid-template-areas:
         "h h h h h h h h h h h h"
-        "i i i i i i i i i i i i"
         "p p p p p p p p p p p p"
+        "i i i i i i i i i i i i"
         "c c c c c c c c c c c c"
         "f f f f f f f f f f f f";
     }
@@ -304,6 +304,14 @@ export default createGlobalStyle`
     height: 75px;
   }
 
+  // IPad Device Preview
+  .iPadPreview{
+    grid-area: p;
+    background-size: 1000px auto;
+    background-repeat: no-repeat;
+    margin-top: 68px;
+  }
+
   // iPhone Device Preview
 
   .iphonePreview {
@@ -319,6 +327,7 @@ export default createGlobalStyle`
     clip-path: url(#screenMask);
     margin-left: 26px;
     margin-top: 23px;
+    margin-bottom: 30px;
   }
 
   .videoContainer {
@@ -344,6 +353,7 @@ export default createGlobalStyle`
       width: 322px;
       margin-left: 24px;
       margin-top: 22px;
+      margin-bottom: 28px;
     }
 
     .videoContainer {
@@ -376,6 +386,7 @@ export default createGlobalStyle`
       clip-path: url(#screenMask);
       margin: 0px;
       margin-top: 17px;
+      margin-bottom: 25px;
     }
 
     .videoContainer {
